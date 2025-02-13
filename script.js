@@ -61,24 +61,16 @@ function displayMedia() {
                     <div class="caption">
                         <p>Will you be my Valentine?</p>
                     </div>
-                    <button id="yesButton">Yes</button>
-                    <button id="noButton">No</button>
+                    <button id="yesButton1">Yes</button>
+                    <button id="yesButton2">Yes</button>
                 `;
 
-                document.getElementById("yesButton").addEventListener("click", () => {
+                document.getElementById("yesButton1").addEventListener("click", () => {
                     showLoveImage();
                 });
 
-                document.getElementById("noButton").addEventListener("click", () => {
-                    // You can add a different response here or do nothing
-                    document.querySelector(".container").innerHTML = `
-                        <div class="media-frame">
-                            <img id="mediaDisplay" src="media/sad.gif" alt="Sad" />
-                        </div>
-                        <div class="caption">
-                            <p>Oh well... maybe next time!</p>
-                        </div>
-                    `;
+                document.getElementById("yesButton2").addEventListener("click", () => {
+                    showLoveImage();
                 });
             }
         });
