@@ -1,14 +1,15 @@
 let currentIndex = 0;
 const media = [
-    "D:/valentine-surprise-main/valentine-surprise-main/media/image1.jpg",
-    "D:/valentine-surprise-main/valentine-surprise-main/media/image2.jpg",
-    "D:/valentine-surprise-main/valentine-surprise-main/media/image3.jpg",
-    "D:/valentine-surprise-main/valentine-surprise-main/media/image4.jpg",
-    "D:/valentine-surprise-main/valentine-surprise-main/media/image5.jpg",
-    "D:/valentine-surprise-main/valentine-surprise-main/media/video1.mp4",
-    "D:/valentine-surprise-main/valentine-surprise-main/media/video2.mp4",
-    "D:/valentine-surprise-main/valentine-surprise-main/media/video3.mp4",
-    "D:/valentine-surprise-main/valentine-surprise-main/media/video4.mp4"
+const media = [
+    "media/image1.jpg",
+    "media/image2.jpg",
+    "media/image3.jpg",
+    "media/image4.jpg",
+    "media/image5.jpg",
+    "media/video1.mp4",
+    "media/video2.mp4",
+    "media/video3.mp4",
+    "media/video4.mp4"
 ];
 const captions = [
     "Okay! Ik I look pretty..Stop staring", "Come on, bruh ! I won't kill you.Smile, please?", "Nuvu taagi osthe future lo ilane tisukellala nenu ? HUH??", "Eh school nundi tappipoyi ochav?", "All hail the tiger?", 
