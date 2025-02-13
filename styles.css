@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script';
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('D:/valentine-surprise-main/valentine-surprise-main/background/startbackground.png') no-repeat center center/cover;
+    text-align: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Transparent White */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 3em;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+}
+
+.media-frame {
+    width: 720px; /* Increase the frame width */
+    height: 650px;
+    overflow: hidden;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caption {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #000;
+}
