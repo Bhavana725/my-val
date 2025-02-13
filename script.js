@@ -1,6 +1,5 @@
 let currentIndex = 0;
 const media = [
-const media = [
     "media/image1.jpg",
     "media/image2.jpg",
     "media/image3.jpg",
@@ -30,7 +29,7 @@ function displayMedia() {
         if (media[currentIndex].endsWith(".jpg") || media[currentIndex].endsWith(".png")) {
             mediaElement = `<img id="mediaDisplay" src="${media[currentIndex]}" alt="Media" />`;
         } else if (media[currentIndex].endsWith(".mp4")) {
-            mediaElement = `
+            mediaElement = ` 
                 <video id="mediaDisplay" width="600" height="400" loop autoplay muted>
                     <source src="${media[currentIndex]}" type="video/mp4">
                     Your browser does not support the video tag.
@@ -57,21 +56,29 @@ function displayMedia() {
                 // If no more media, show the final message
                 document.querySelector(".container").innerHTML = `
                     <div class="media-frame">
-                        <img id="mediaDisplay" src="D:/valentine-surprise-main/valentine-surprise-main/media/what.gif" alt="What" />
+                        <img id="mediaDisplay" src="media/what.gif" alt="What" />
                     </div>
                     <div class="caption">
                         <p>Will you be my Valentine?</p>
                     </div>
                     <button id="yesButton">Yes</button>
-                    <button id="yesButton2">Yes</button>
+                    <button id="noButton">No</button>
                 `;
 
                 document.getElementById("yesButton").addEventListener("click", () => {
                     showLoveImage();
                 });
 
-                document.getElementById("yesButton2").addEventListener("click", () => {
-                    showLoveImage();
+                document.getElementById("noButton").addEventListener("click", () => {
+                    // You can add a different response here or do nothing
+                    document.querySelector(".container").innerHTML = `
+                        <div class="media-frame">
+                            <img id="mediaDisplay" src="media/sad.gif" alt="Sad" />
+                        </div>
+                        <div class="caption">
+                            <p>Oh well... maybe next time!</p>
+                        </div>
+                    `;
                 });
             }
         });
@@ -81,11 +88,11 @@ function displayMedia() {
 function showLoveImage() {
     document.querySelector(".container").innerHTML = `
         <div class="media-frame">
-            <img id="mediaDisplay" src="D:/valentine-surprise-main/valentine-surprise-main/media/love.gif" alt="Love" />
+            <img id="mediaDisplay" src="media/love.gif" alt="Love" />
         </div>
         <div class="caption">
             <p>Edo No chepe option unate ethukunav ga.<br>
-			 Anyways Happy valentines day dear...</p>
+             Anyways Happy valentines day dear...</p>
         </div>
     `;
 }
